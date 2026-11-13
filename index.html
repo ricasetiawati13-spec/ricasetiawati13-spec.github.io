@@ -1,132 +1,225 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Profil Restoran</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi Zakhrofa Agniyaa</title>
 
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    color: #222;
-    background-color: #e9edf0;
-    background-image:
-    linear-gradient(45deg, #dce1e5 25%, transparent 25%),
-    linear-gradient(-45deg, #dce1e5 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, #dce1e5 75%),
-    linear-gradient(-45deg, transparent 75%, #dce1e5 75%);
-    background-size: 100px 100px;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-header {
-    text-align: center;
-    padding: 30px 10px;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            color: #333;
+        }
 
-.logo {
-    font-size: 100px;
-}
+        header {
+            background: #183b56;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
 
-nav {
-    margin: 20px;
-}
+        nav {
+            background: #102a43;
+            padding: 15px;
+            text-align: center;
+        }
 
-nav a {
-    color: purple;
-    font-size: 20px;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
 
-h1 {
-    font-size: 38px;
-    font-weight: normal;
-    text-align: center;
-    margin-top: 60px;
-}
+        nav a:hover {
+            color: #ffd166;
+        }
 
-h2 {
-    font-size: 28px;
-    font-weight: normal;
-}
+        .container {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 20px;
+        }
 
-p {
-    font-size: 18px;
-    line-height: 1.8;
-}
+        .profile {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
 
-.quote {
-    text-align: center;
-    font-style: italic;
-    margin-top: 60px;
-}
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #183b56;
+        }
 
-section {
-    padding: 20px;
-}
+        .profile h2 {
+            margin-top: 15px;
+            color: #183b56;
+        }
 
-hr {
-    margin: 30px 0;
-}
+        .biodata {
+            background: white;
+            margin-top: 25px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
 
-footer {
-    text-align: center;
-    color: gray;
-    padding: 30px;
-}
-</style>
+        .biodata h2 {
+            color: #183b56;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .biodata table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .biodata td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .biodata td:first-child {
+            font-weight: bold;
+            width: 35%;
+        }
+
+        .repository {
+            text-align: center;
+            margin-top: 25px;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .repository a {
+            display: inline-block;
+            background: #183b56;
+            color: white;
+            padding: 12px 25px;
+            margin-top: 15px;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .repository a:hover {
+            background: #102a43;
+        }
+
+        footer {
+            background: #183b56;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-    <div class="logo">🍽️</div>
+    <header>
+        <h1>WEBSITE PROFIL PRIBADI</h1>
+        <p>Selamat Datang di Halaman Profil Saya</p>
+    </header>
+
     <nav>
-        <a href="index.html">Beranda</a> |
-        <a href="jadwal.html">Jadwal Operasional</a>
+        <a href="#profil">Profil</a>
+        <a href="#biodata">Biodata</a>
+        <a href="#repository">Repository Praktikum</a>
     </nav>
-</header>
 
-<section id="beranda">
-    <h1>Selamat Datang di Restoran Lezat</h1>
+    <div class="container">
 
-    <p class="quote">
-        "Tempat terbaik untuk menikmati
-        makanan lezat bersama keluarga."
-    </p>
+        <!-- FOTO PROFIL -->
+        <section class="profile" id="profil">
+            <img src="foto.jpg" alt="Foto Profil">
 
-    <hr>
+            <h2>RICA SETIAWATI</h2>
+            <p></p>Pelajar</p>
+        </section>
 
-    <p>
-        Restoran Lezat didirikan sejak tahun 2026
-        untuk memberikan pengalaman makan yang
-        menyenangkan bagi pelanggan. Kami
-        berkomitmen menyajikan makanan
-        berkualitas tinggi dengan
-        <mark>harga yang sangat terjangkau</mark>
-        bagi semua pelanggan.
-    </p>
+        <!-- BIODATA -->
+        <section class="biodata" id="biodata">
+            <h2>Biodata Diri</h2>
 
-    <h2>Menu Favorit Kami</h2>
+            <table>
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td>: Rica setiawati</td>
+                </tr>
 
-    <ul>
-        <li>Makanan
-            <ul>
-                <li>Nasi Goreng</li>
-                <li>Ayam Bakar</li>
-            </ul>
-        </li>
-        <li>Minuman
-            <ul>
-                <li>Es Teh</li>
-                <li>Jus Jeruk</li>
-            </ul>
-        </li>
-    </ul>
-</section>
+                <tr>
+                    <td>Tempat, Tanggal Lahir</td>
+                    <td>: Cirebon,22-12-2010</td>
+                </tr>
 
-<footer>
-    Created by Rica setiawsti@2026
-</footer>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:Perempuan</td>
+                </tr>
+
+                <tr>
+                    <td>Alamat</td>
+                    <td>: Desa Budur,Blok Jati sari Rt03/Rw05.Kab Cirebon,Kec Ciwaringin</td>
+                </tr>
+
+                <tr>
+                    <td>Agama</td>
+                    <td>: Islam</td>
+                </tr>
+
+                <tr>
+                    <td>Nama Sekolah</td>
+                    <td>: SMKN 1 LEUWIMUNDING</td>
+                </tr>
+
+                <tr>
+                    <td>Jurusan 
+                </td>
+                    <td>: Tjkt</td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td>: rica.setiawati13@smp.belajar.if</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- LINK REPOSITORY -->
+        <section class="repository" id="repository">
+            <h2>Repository Praktikum</h2>
+
+            <p>
+                Klik tombol di bawah ini untuk melihat
+                repository tugas praktikum saya.
+            </p>
+
+            <a href="https://ricasetiawati13-spec.github.io/praktikum">
+                Buka Repository Praktikum
+            </a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Website Profil Pribadi</p>
+    </footer>
 
 </body>
 </html>
